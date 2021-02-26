@@ -390,4 +390,12 @@ header {
 .slider__btn--right {
   left: 8rem;
 }
+
+.footer {
+  padding: 10rem 2.4rem;
+}
+
+.footer__title {
+  padding-bottom: 4.7rem;
+}
 /*# sourceMappingURL=main.css.map */
