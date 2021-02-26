@@ -215,4 +215,54 @@ header {
 .section-2__paragraph {
   padding: 2.4rem 0 4rem 0;
 }
+
+.section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f94f4f;
+  color: #FFFFFF;
+}
+
+.section-3__text {
+  padding: 9.6rem 2.4rem 4.9rem 2.4rem;
+}
+
+.section-3__list {
+  padding: 0 2.4rem 9.6rem 2.4rem;
+}
+
+.list__items {
+  z-index: 10;
+}
+
+.list__item {
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.list__item--num {
+  font-size: 8rem;
+  line-height: 8.8rem;
+  font-weight: 800;
+  position: relative;
+  top: 4rem;
+  left: -1.6rem;
+  color: #f98b8b;
+  z-index: 0;
+}
+
+.list__item--title {
+  padding-bottom: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
