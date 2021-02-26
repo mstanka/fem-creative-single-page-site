@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Commissioner', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px = 1rem */
+}
+
+body {
+  font-size: 1.4rem;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+picture,
+img {
+  display: inline-block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */

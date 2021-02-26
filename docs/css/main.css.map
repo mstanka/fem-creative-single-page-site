@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;ACLD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,0BAA0B;CACxC;;ACFD,AAAA,IAAI,CAAC;EACH,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,KAAK;EAAE,iBAAiB;CACpC;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,MAAM;CACf;;AAED,AAAA,OAAO;AACP,GAAG,CAAC;EACF,OAAO,EAAE,YAAY;CACtB;;AAED,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,OAAO;EACf,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB",
+    "sources": [
+        "../../sass/main.scss",
+        "../../sass/abstracts/_variables.scss",
+        "../../sass/abstracts/_mixin.scss",
+        "../../sass/base/_reset.scss",
+        "../../sass/base/_typography.scss",
+        "../../sass/base/_utilities.scss",
+        "../../sass/layout/_header.scss",
+        "../../sass/layout/_section-1.scss",
+        "../../sass/layout/_section-2.scss",
+        "../../sass/layout/_section-3.scss",
+        "../../sass/layout/_section-4.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
