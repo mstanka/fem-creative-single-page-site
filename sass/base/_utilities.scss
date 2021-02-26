@@ -18,6 +18,8 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
+  color: $ligth-color;
 }
 
 li {

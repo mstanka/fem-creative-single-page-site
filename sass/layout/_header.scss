@@ -1,0 +1,32 @@
+.nav {
+  height: 11rem;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__links {
+    background-color: $dark-color-bg;
+    width: 25rem;
+    @include flex(column, center);
+    position: absolute;
+    top: 11rem;
+    right: 2.7rem;
+    display: none;
+
+    a {
+      margin: 1.6rem;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  &__menu--active &__links{
+    display: flex;
+  }
+}
