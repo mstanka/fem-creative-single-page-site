@@ -1,9 +1,8 @@
 .nav {
   height: 11rem;
+  min-width: 37.5rem;
   padding: 0 2.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center);
   position: relative;
 
   &__logo {
@@ -26,7 +25,7 @@
     }
   }
 
-  &__menu--active &__links{
+  &__menu--active &__links {
     display: flex;
   }
 }

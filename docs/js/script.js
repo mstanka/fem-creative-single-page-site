@@ -9,3 +9,10 @@ menu.addEventListener("click", () => {
     ? menuIcon.setAttribute("src", "./assets/mobile/icon-cross.svg")
     : menuIcon.setAttribute("src", "./assets/mobile/icon-hamburger.svg");
 });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav.classList.contains("nav__menu--active")) {
+    nav.classList.remove("nav__menu--active");
+    menuIcon.setAttribute("src", "./assets/mobile/icon-hamburger.svg");
+  }
+});
