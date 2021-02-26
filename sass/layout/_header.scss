@@ -1,6 +1,10 @@
+header {
+  min-width: 37.5rem;
+  margin: 0 auto;
+}
+
 .nav {
   height: 11rem;
-  min-width: 37.5rem;
   padding: 0 2.4rem;
   @include flex(row, center);
   position: relative;

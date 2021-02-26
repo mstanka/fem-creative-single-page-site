@@ -39,6 +39,18 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 800;
+}
+
 .btn {
   font-size: 1.8rem;
   font-weight: bold;
@@ -46,9 +58,13 @@ li {
   padding: 1.7rem 3.8rem;
 }
 
+header {
+  min-width: 37.5rem;
+  margin: 0 auto;
+}
+
 .nav {
   height: 11rem;
-  min-width: 37.5rem;
   padding: 0 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,5 +118,38 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-1__text {
+  padding: 5.6rem 2.4rem 9.6rem 2.4rem;
+}
+
+.section-1__lead {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 1.5rem 0 4rem 0;
+}
+
+.section-1__img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
