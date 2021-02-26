@@ -3,4 +3,17 @@
   font-weight: bold;
   background-color: $primary-color;
   padding: 1.7rem 3.8rem;
-} 
+
+  &-cta {
+    background-color: inherit;
+    color: $primary-color;
+    padding: 0 0 0.75rem 0;
+    border-bottom: 1px solid $primary-color;
+    transition: all 0.5s;
+  }
+
+  &-cta:hover {
+    color: $primary-color-light;
+    border-bottom: 1px solid $primary-color-light;
+  }
+}

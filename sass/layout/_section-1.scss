@@ -6,13 +6,14 @@
   }
 
   &__lead {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
     padding: 1.5rem 0 4rem 0;
   }
 
   &__img {
     order: -1;
-    width: 100%;
+   
+    img {
+      width: 100%;
+    }
   }
 }

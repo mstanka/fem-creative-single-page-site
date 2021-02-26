@@ -1,0 +1,30 @@
+.section-2 {
+  @include flex(column, center);
+  background-color: $dark-color-bg;
+  color: $light-color;
+
+  &__img img {
+    width: 100%;
+  }
+
+  &__text {
+    padding: 7.2rem 2.4rem;
+    position: relative;
+  }
+
+  &__pattern img {
+    height: 2.9rem;
+    width: 6.3rem;
+    position: absolute;
+    top: -2rem;
+    left: 2.4rem;
+  }
+
+  &__title--span {
+    color: $primary-color;
+  }
+
+  &__paragraph {
+    padding: 2.4rem 0 4rem 0;
+  }
+}
