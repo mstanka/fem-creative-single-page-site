@@ -31,6 +31,14 @@ h1 {
   font-size: 4rem;
   line-height: 4rem;
   font-weight: 800;
+  @include media-md {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+  }
+  @include media-lg {
+    font-size: 8rem;
+    line-height: 8.8rem;
+  }
 }
 
 h2 {
@@ -42,4 +50,8 @@ h2 {
 p {
   font-size: 1.5rem;
   line-height: 2.5rem;
+  @include media-lg {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
 }

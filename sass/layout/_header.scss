@@ -1,4 +1,4 @@
-header {  
+header {
   margin: 0 auto;
 }
 
@@ -7,13 +7,16 @@ header {
   padding: 0 2.4rem;
   @include flex(row, center);
   position: relative;
-
   @include media-md {
     height: 17.8rem;
+    padding-right: 0;
   }
 
   &__logo {
     margin-right: auto;
+    @include media-lg {
+      margin-left: 16.5rem;
+    }
   }
 
   &__links {
@@ -24,7 +27,6 @@ header {
     top: 11rem;
     right: 2.7rem;
     display: none;
-
     @include media-md {
       display: flex;
       flex-direction: row;
@@ -38,12 +40,14 @@ header {
       padding: 5.7rem 4rem 5.7rem 3rem;
       margin-left: 2rem;
     }
+    @include media-lg {
+      margin-left: 10rem;
+    }
 
     a {
       margin: 1.6rem;
       font-size: 1.8rem;
       line-height: 3.2rem;
-
       @include media-md {
         margin: 0;
       }
