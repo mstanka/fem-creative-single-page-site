@@ -2,22 +2,66 @@
   @include flex(column, center);
   background-color: $dark-color-bg;
   color: $light-color;
+  @include media-md {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
-  &__img img {
-    width: 100%;
+  &__img {
+    position: relative;
+    @include media-md {
+      margin-right: auto;
+    }
+    img {
+      width: 100%;
+    }
   }
 
   &__text {
     padding: 7.2rem 2.4rem;
-    position: relative;
+    max-width: 32.7rem;
+    width: 100%;
+    @include media-md {
+      padding-top: 12rem;
+      padding-left: 6.9rem;
+      margin-right: auto;
+    }
+    @include media-xl {
+      padding-top: 20rem;
+      padding-left: 0;
+    }
   }
 
   &__pattern img {
     height: 2.9rem;
     width: 6.3rem;
     position: absolute;
-    top: -2rem;
+    top: 18.5rem;
     left: 2.4rem;
+    @include media-md {
+      top: 15rem;
+      left: 31rem;
+    }
+    @include media-lg {      
+      height: 4rem;
+      width: 9.4rem;
+      left: 56rem;      
+    }
+    @include media-xl {      
+      height: 6rem;
+      width: 13.4rem;
+      left: 67rem;
+      top: 23.4rem;
+    } 
+  }
+
+  &__title {
+    @include media-md {
+      max-width: 14rem;
+    }
+    @include media-lg {
+      max-width: 24rem;
+    }
   }
 
   &__title--span {
