@@ -1,5 +1,4 @@
-header {
-  min-width: 37.5rem;
+header {  
   margin: 0 auto;
 }
 
@@ -8,6 +7,10 @@ header {
   padding: 0 2.4rem;
   @include flex(row, center);
   position: relative;
+
+  @include media-md {
+    height: 17.8rem;
+  }
 
   &__logo {
     margin-right: auto;
@@ -22,14 +25,38 @@ header {
     right: 2.7rem;
     display: none;
 
+    @include media-md {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: $primary-color;
+      max-width: 70.5rem;
+      width: 100%;
+      position: relative;
+      top: 0;
+      right: 0;
+      padding: 5.7rem 4rem 5.7rem 3rem;
+      margin-left: 2rem;
+    }
+
     a {
       margin: 1.6rem;
       font-size: 1.8rem;
       line-height: 3.2rem;
+
+      @include media-md {
+        margin: 0;
+      }
     }
   }
 
   &__menu--active &__links {
     display: flex;
+  }
+
+  &__menu--icon {
+    @include media-md {
+      display: none;
+    }
   }
 }

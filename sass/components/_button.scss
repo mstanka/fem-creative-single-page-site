@@ -4,6 +4,10 @@
   background-color: $primary-color;
   padding: 1.7rem 3.8rem;
 
+  @include media-md {
+    background-color: $dark-color-bg;
+  }
+
   &-cta {
     background-color: inherit;
     color: $primary-color;
