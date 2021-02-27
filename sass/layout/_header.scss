@@ -15,7 +15,7 @@ header {
   &__logo {
     margin-right: auto;
     @include media-lg {
-      margin-left: 16.5rem;
+      margin-left: 10%;
     }
   }
 
@@ -32,7 +32,7 @@ header {
       flex-direction: row;
       justify-content: space-around;
       background-color: $primary-color;
-      max-width: 70.5rem;
+      max-width: 43.8rem;
       width: 100%;
       position: relative;
       top: 0;
@@ -41,7 +41,7 @@ header {
       margin-left: 2rem;
     }
     @include media-lg {
-      margin-left: 10rem;
+      max-width: 70.5rem;
     }
 
     a {
