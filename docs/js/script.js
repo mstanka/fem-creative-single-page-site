@@ -29,8 +29,7 @@ const maxSlide = slides.length - 1;
 
 const goToSlide = (slide) => {
   slides.forEach((s, i) => {
-    s.style.transform = `translateX(${100 * (i - slide)}%)`;
-    // curSlide = 0; output: 0, 100%, 200%
+    s.style.transform = `translateX(${150 * (i - slide)}%)`;
   });
 };
 

@@ -1,13 +1,19 @@
 .section-4 {
-  @include flex(column, center);  
   color: $light-color;
   position: relative;
+  height: 63.1rem;
 
   &__slider {
     height: 63.1rem;
-    width: 100%;
     margin: 3.7rem auto;
     position: relative;
+    @include media-md {
+      margin: 0 auto;
+      height: 47.2rem;
+    }
+    @include media-xl {
+      height: 72.8rem;
+    }
   }
 }
 
@@ -15,46 +21,97 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  width: 100%;
+  //height: 100%;
   transition: transform 1s;
   @include flex(column, center);
   overflow: hidden;
+  @include media-md {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
 
   &__header {
-    //height: 27.2rem;
     width: 100%;
     position: relative;
     padding: 8.4rem 2.4rem 12.8rem 2.4rem;
     background-color: $dark-color-bg;
     margin-top: -4.5rem;
+    flex: 1;
+    @include media-md {
+      margin-top: 0;
+      margin-right: -6rem;
+      z-index: 1;
+      max-height: 39rem;
+    }
   }
 
   &__title {
     padding: 0 2.4rem;
+    @include media-xl {
+      padding: 5.2rem 0 24.3rem 6.5rem;
+    }
   }
 
-  &__container { 
+  &__pattern img {
+    height: 2.9rem;
+    width: 6.3rem;
+    position: absolute;
+    transform: rotateX(180deg);
+    display: none;
+    @include media-md {
+      display: block;
+      top: 12.6rem;
+      left: 34rem;
+    }
+    @include media-lg {
+      height: 4rem;
+      width: 9.4rem;
+      left: 43rem;
+    }
+    @include media-xl {
+      transform: rotateX(0);
+      height: 6rem;
+      width: 13.4rem;
+      left: 58rem;
+      top: 16.4rem;
+    }    
+  }
+ 
+  &__container {
     width: 100%;
-    height: 42.3rem;
-    position: relative;
-    @include flex(row, center);
-    order: -1; 
+    order: -1;
+    flex: 1;
+    @include media-md {
+      flex: 1.4;
+    }
   }
 
   &__img {
     width: 100%;
-    
+
+    picture,
     img {
-     width: 100%;
-     height: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     &--text {
       position: absolute;
-      top: 33.2rem;
+      top: 29.2rem;
       right: 3.2rem;
       text-align: end;
       font-size: 1.5rem;
       line-height: 2rem;
+      @include media-md {
+        top: 40.2rem;
+      }
+      @include media-xl {
+        top: 55.1rem;
+        right: 12.2rem;
+      }
     }
 
     &--title {
@@ -65,7 +122,7 @@
 
 .slider__btn {
   position: absolute;
-  top: 57.2rem;
+  bottom: 2%;
   z-index: 10;
   border: none;
   background-color: $dark-color-bg;
@@ -73,12 +130,30 @@
   height: 4rem;
   width: 4rem;
   cursor: pointer;
+  @include media-md {
+    top: 18.2rem;
+  }
+  @include media-xl {
+    top: 30.1rem;
+  }
 
   &--left {
     left: 2.4rem;
+    @include media-md {
+      left: 4.9rem;
+    }
+    @include media-xl {
+      left: 8.5rem;
+    }
   }
 
   &--right {
     left: 8rem;
+    @include media-md {
+      left: 11.5rem;
+    }
+    @include media-xl {
+      left: 14.5rem;
+    }
   }
 }
