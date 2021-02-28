@@ -2,22 +2,53 @@
   @include flex(column, center);
   background-color: $primary-color;
   color: $light-color;
+  @include media-md {
+    flex-direction: row;
+    align-items: stretch;
+  }
 
   &__text {
     padding: 9.6rem 2.4rem 4.9rem 2.4rem;
+    @include media-md {
+      background-color: $light-color;
+      color: $dark-color;
+      flex: 1;
+    }
+  }
+
+  &__title {
+    @include media-xl {
+      transform: translateX(34%);
+      z-index: 100;
+      position: relative;
+    }
   }
   &__list {
     padding: 0 2.4rem 9.6rem 2.4rem;
+    background-color: $primary-color;
+    @include media-md {
+      padding-top: 8rem;
+      margin-top: -12rem;
+      flex: 1.5;
+      z-index: 1;
+      position: relative;
+    }
   }
 }
 
 .list__items {
-  z-index: 10;
+  @include media-md {
+    padding-left: 4.3rem;
+  }
+  @include media-xl {
+    padding-left: 28.5rem;
+  }
 }
 
 .list__item {
   padding-bottom: 4rem;
   position: relative;
+  z-index: 10;
 
   &--num {
     font-size: 8rem;
@@ -28,6 +59,9 @@
     left: -1.6rem;
     color: $primary-color-light;
     z-index: 0;
+    @include media-xl {
+      left: -5.9rem;
+    }
   }
 
   &--title {
