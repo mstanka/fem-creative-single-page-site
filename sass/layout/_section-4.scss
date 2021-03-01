@@ -1,12 +1,13 @@
 .section-4 {
   color: $light-color;
   position: relative;
-  //height: 63.1rem;
+ // height: 63.1rem;
 
   &__slider {
     height: 63.1rem;
     margin: 3.7rem auto;
     position: relative;
+    overflow: hidden;
     @include media-md {
       margin: 0 auto;
       height: 47.2rem;
@@ -121,7 +122,7 @@
 
 .slider__btn {
   position: absolute;
-  bottom: 2%;
+  bottom: 6%;
   z-index: 10;
   border: none;
   background-color: $dark-color-bg;

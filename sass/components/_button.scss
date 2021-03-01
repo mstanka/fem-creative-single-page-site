@@ -3,6 +3,11 @@
   font-weight: bold;
   background-color: $primary-color;
   padding: 1.7rem 3.8rem;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $primary-color-light;
+  }
 
   &-cta {
     background-color: inherit;
@@ -14,11 +19,15 @@
 
   &-cta:hover {
     color: $primary-color-light;
+    background-color: inherit;
     border-bottom: 1px solid $primary-color-light;
   }
 }
 .nav__links .btn {
     @include media-md {
     background-color: $dark-color-bg;
+  }
+  &:hover {
+    background-color: $dark-color-light-bg;
   }
 }
