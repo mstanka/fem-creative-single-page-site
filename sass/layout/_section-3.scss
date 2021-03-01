@@ -33,6 +33,9 @@
       z-index: 1;
       position: relative;
     }
+    @include media-xl {
+      padding: 20rem 10.6rem 20rem 0rem;
+    }
   }
 }
 
@@ -47,8 +50,6 @@
 
 .list__item {
   padding-bottom: 4rem;
-  position: relative;
-  z-index: 10;
 
   &--num {
     font-size: 8rem;
@@ -66,5 +67,7 @@
 
   &--title {
     padding-bottom: 1.5rem;
+    position: relative;
+    z-index: 10;
   }
 }

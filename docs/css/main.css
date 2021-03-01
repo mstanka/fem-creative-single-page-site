@@ -543,6 +543,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .section-3__list {
+    padding: 20rem 10.6rem 20rem 0rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .list__items {
     padding-left: 4.3rem;
@@ -557,8 +563,6 @@ header {
 
 .list__item {
   padding-bottom: 4rem;
-  position: relative;
-  z-index: 10;
 }
 
 .list__item--num {
@@ -580,6 +584,8 @@ header {
 
 .list__item--title {
   padding-bottom: 1.5rem;
+  position: relative;
+  z-index: 10;
 }
 
 .section-4 {
