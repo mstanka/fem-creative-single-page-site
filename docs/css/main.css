@@ -574,7 +574,6 @@ header {
 .section-4 {
   color: #FFFFFF;
   position: relative;
-  height: 63.1rem;
 }
 
 .section-4__slider {
@@ -814,9 +813,69 @@ header {
 
 .footer {
   padding: 10rem 2.4rem;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 14rem 2.4rem;
+  }
+}
+
+.footer__pattern {
+  overflow: hidden;
+  position: absolute;
+  top: 18.7rem;
+  left: 0;
+  height: 6rem;
+  width: 13.4rem;
+}
+
+.footer__pattern img {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__pattern img {
+    display: inline-block;
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
 }
 
 .footer__title {
   padding-bottom: 4.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    padding-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

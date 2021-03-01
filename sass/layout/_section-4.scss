@@ -1,7 +1,7 @@
 .section-4 {
   color: $light-color;
   position: relative;
-  height: 63.1rem;
+  //height: 63.1rem;
 
   &__slider {
     height: 63.1rem;
@@ -23,7 +23,6 @@
   left: 0;
   right: 0;
   width: 100%;
-  //height: 100%;
   transition: transform 1s;
   @include flex(column, center);
   overflow: hidden;
